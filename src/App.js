@@ -1,8 +1,9 @@
 import Accordion from "./components/Accordion";
-import PaymentPage from "./pages/PaymentPage";
+import Package from "./components/Package";
+import PackageList from "./components/PackageList";
 
 function App() {
-  return <PaymentPage />;
+  return <PackageList />;
 }
 
 export default App;
