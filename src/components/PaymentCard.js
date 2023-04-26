@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const PaymentCard = ({ img, amount }) => {
+const PaymentCard = ({ img, amount, hall }) => {
   const [showNumInput, setShowNumInput] = useState(true);
   const [input, setInput] = useState("");
   const navigate = useNavigate();
@@ -57,7 +57,9 @@ const PaymentCard = ({ img, amount }) => {
       <div className={`${showNumInput ? "hidden" : "flex"} justify-center`}>
         <button
           onClick={() =>
-            navigate("/checkout", { state: { img: img, amount: amount } })
+            navigate("/checkout", {
+              state: { img: img, amount: amount, hall: hall },
+            })
           }
           className="bg-pink-800 px-3 py-2"
         >

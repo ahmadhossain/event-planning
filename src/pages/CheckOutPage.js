@@ -48,7 +48,7 @@ const CheckOutPage = () => {
             <h4>{new Date().toDateString()}</h4>
           </div>
           <div class="main">
-            <h3>Dribbble Pro Account (1 year)</h3>
+            <h3>{location.state.hall}</h3>
             <h5>Total: ${location.state.amount} BDT</h5>
           </div>
           <div class="message">

@@ -21,7 +21,9 @@ const Package = ({ hall, img, guest, price }) => {
         </p>
         <button
           className="button"
-          onClick={() => navigate("/payment", { state: { amount: price } })}
+          onClick={() =>
+            navigate("/payment", { state: { amount: price, hall: hall } })
+          }
         >
           Book Now
         </button>

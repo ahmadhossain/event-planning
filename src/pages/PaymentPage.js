@@ -40,7 +40,13 @@ const PaymentPage = () => {
           Nagad
         </button>
       </div>
-      {showCard && <PaymentCard img={img} amount={location.state.amount} />}
+      {showCard && (
+        <PaymentCard
+          img={img}
+          amount={location.state.amount}
+          hall={location.state.hall}
+        />
+      )}
     </div>
   );
 };
