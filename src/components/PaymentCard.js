@@ -5,7 +5,7 @@ const PaymentCard = ({ img, amount, hall }) => {
   const [showNumInput, setShowNumInput] = useState(true);
   const [input, setInput] = useState("");
   const navigate = useNavigate();
-  const text = `Merchant: Merchent Name
+  const text = `Merchant: Event Planning
                 Invoice no: 21279610
                 Amount: BDT ${amount}`;
   const label = showNumInput ? "Your Bkash Account Number" : "PIN";
