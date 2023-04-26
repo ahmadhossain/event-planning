@@ -64,6 +64,14 @@ const Login = ({ handleUser }) => {
           <input type="submit" />
         </div>
       </form>
+      <div className="mx-auto">
+        <button
+          onClick={() => navigate("/registration")}
+          className="mx-auto w-full p-2"
+        >
+          Sign up
+        </button>
+      </div>
     </div>
   );
 
