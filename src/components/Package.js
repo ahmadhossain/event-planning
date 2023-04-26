@@ -20,6 +20,7 @@ const Package = ({ hall, img, guest, price }) => {
           Story + Hall Rent
         </p>
         <button
+          className="button"
           onClick={() => navigate("/payment", { state: { amount: price } })}
         >
           Book Now
