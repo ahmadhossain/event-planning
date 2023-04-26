@@ -10,6 +10,7 @@ const Package = ({ hall, img, guest, price }) => {
       <div class="description">
         <h2>{hall}</h2>
         <h4>Engagement, Wedding Ceremony, Wedding Reception</h4>
+        <p>Wednesday, April 30, 2023</p>
         <h1>${price}</h1>
         <p>
           Shahi Kacchi Biriyani, Chicken Roast/ Chicken Tandori, Beef Kofta
