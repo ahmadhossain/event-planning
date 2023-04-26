@@ -1,6 +1,7 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 const Package = ({ hall, img, guest, price }) => {
+  const navigate = useNavigate();
   return (
     <div className="card">
       <div class="photo">
@@ -18,7 +19,11 @@ const Package = ({ hall, img, guest, price }) => {
           Menu for {guest} People + Complete Decoration + Photography + Video
           Story + Hall Rent
         </p>
-        <button>Book Now</button>
+        <button
+          onClick={() => navigate("/payment", { state: { amount: price } })}
+        >
+          Book Now
+        </button>
       </div>
     </div>
   );

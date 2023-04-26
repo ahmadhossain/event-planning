@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const PaymentCard = ({ img }) => {
+const PaymentCard = ({ img, amount }) => {
   const [showNumInput, setShowNumInput] = useState(true);
   const [input, setInput] = useState("");
   const text = `Merchant: Merchent Name
                 Invoice no: 21279610
-                Amount: BDT 1000`;
+                Amount: BDT ${amount}`;
   const label = showNumInput ? "Your Bkash Account Number" : "PIN";
   const type = showNumInput ? "text" : "password";
   return (

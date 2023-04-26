@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import PaymentCard from "../components/PaymentCard";
 import BhashLogo from "../images/Bkash_Payment.png";
 import NagadLogo from "../images/Nagad-Logo.wine.png";
+import { useLocation } from "react-router-dom";
 
 const PaymentPage = () => {
   const [showCard, setShowCard] = useState(false);
   const [img, setImg] = useState(BhashLogo);
+  const location = useLocation();
 
   return (
     <div>
@@ -38,7 +40,7 @@ const PaymentPage = () => {
           Nagad
         </button>
       </div>
-      {showCard && <PaymentCard img={img} />}
+      {showCard && <PaymentCard img={img} amount={location.state.amount} />}
     </div>
   );
 };

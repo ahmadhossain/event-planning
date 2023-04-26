@@ -6,16 +6,16 @@ function Accordion() {
 
   const items = [
     {
-      label: "Q1",
-      content: "A1",
+      label: "Can I have custom packages?",
+      content: "Yes. You can create your own package.",
     },
     {
-      label: "Q2",
-      content: "A2",
+      label: "How can I confirm my order?",
+      content: "You need to clear your payment.",
     },
     {
-      label: "Q3",
-      content: "A3",
+      label: "Can I have custom decoration?",
+      content: "Yes.",
     },
   ];
 
@@ -41,7 +41,7 @@ function Accordion() {
     return (
       <div>
         <div
-          className="flex justify-between p-3 bg-gray-50 border-b items-center cursor-pointer"
+          className="flex justify-between p-3 bg-blue-50 border-b items-center cursor-pointer"
           onClick={() => handleClick(index)}
         >
           {item.label}
@@ -54,7 +54,7 @@ function Accordion() {
 
   return (
     <div>
-      <div className="border-x border-t rounded max-w-4xl mx-auto">
+      <div className="border-x mb-24 border-t rounded max-w-4xl mx-auto">
         {renderedItems}
       </div>
     </div>
